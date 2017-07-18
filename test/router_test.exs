@@ -14,7 +14,7 @@ defmodule RouterTest do
     # Assert the response and status
     assert conn.state == :sent
     assert conn.status == 200
-    assert conn.resp_body == "world"
+    assert conn.resp_body == ""
     assert conn.path_info == ["12", "6", "3", "1"]
   end
 end

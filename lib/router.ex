@@ -5,7 +5,7 @@ defmodule Router do
   plug :dispatch
 
   get "/*_rest" do
-    send_resp(conn, 200, "world")
+    send_resp(conn, 200, "")
   end
 
   match _ do
